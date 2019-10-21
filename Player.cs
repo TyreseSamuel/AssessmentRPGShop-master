@@ -11,7 +11,7 @@ namespace Shop3
     {
         int InventoryCount = 0;
         ArrayList Inventory = new ArrayList();
-        public float gold = 0.00f;
+        public int gold = 150;
         public void buy(Item a)
         {
             if(gold > a.cost)
@@ -23,7 +23,7 @@ namespace Shop3
         public Item sell(int index)
         {
             Item item = Inventory[index] as Item;
-            Inventory.Remove(index);
+            Inventory.RemoveAt(index);
             gold += item.cost;
             return item;
         }

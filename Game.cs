@@ -27,11 +27,13 @@ namespace Shop3
                 {
                     player.buy(shop.sell(0));
                     player.buy(shop.sell(1));
+                    Console.WriteLine("Bought Senzu and Dawnbreaker!");
                 }
                 else if (choice == "2")
                 {
                     shop.buy(player.sell(0));
-                    shop.buy(player.sell(1));
+                    shop.buy(player.sell(0));
+                    Console.WriteLine("Sold Senzu and Dawnbreaker!");
                 }
                 else if (choice == "3")
                 {

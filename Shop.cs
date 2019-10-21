@@ -7,10 +7,11 @@ using System.Collections;
 using System.IO;
 namespace Shop3
 {
-    class Shop
+    class Shop 
     {
         public float gold = 0.00f;
         ArrayList Inventory = new ArrayList();
+        
         public void buy(Item a)
         {
             if (gold > a.cost)
@@ -53,6 +54,7 @@ namespace Shop3
                     potion.description = reader.ReadLine();
                     potion.cost = Convert.ToInt32(reader.ReadLine());
                     potion.statModifier = Convert.ToInt32(reader.ReadLine());
+                    Inventory.Add(potion);
                 }
             }
         }

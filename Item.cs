@@ -12,6 +12,10 @@ namespace Shop3
         public string name;
         public string description;
         public int cost;
+        //public Item(string name, string desc,int cost)
+        //{
+            //name =
+        //}
         public void PrintItem()
         {
             Console.WriteLine(typeName);
